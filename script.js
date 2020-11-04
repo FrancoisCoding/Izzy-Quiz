@@ -128,7 +128,6 @@ friendsQuestions.forEach(
       answers.push(
         `<label>
           <input type="radio" name="question${questionNumber}" value="${letter}">
-          ${letter} :
           ${currentQuestion.answers[letter]}
         </label>`
       );
@@ -136,7 +135,7 @@ friendsQuestions.forEach(
 
     // Add Question and Answer to Output
     output.push(
-      `<div class="question"> ${currentQuestion.question} </div>
+      `<div class="question font-dosis"> ${currentQuestion.question} </div>
       <div class="answers"> ${answers.join('')} </div>`
     );
   }
